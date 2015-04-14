@@ -43,10 +43,10 @@
         <form>
             <label class="item item-input">
                 <i class="icon ion-search placeholder-icon"></i>
-                <input ng-model="search" placeholder="Search">
+                <input ng-model="rogo.search" placeholder="Search">
             </label>
             <button ng-click="showAvailableWords = !showAvailableWords">Available Words?</button>
-            <b ng-if="showAvailableWords" ng-click="$parent.search = wordGroup.name;" ng-repeat="wordGroup in wordListArray">
+            <b ng-if="showAvailableWords" ng-click="rogo.search = wordGroup.name;" ng-repeat="wordGroup in wordListArray">
                 {{wordGroup.name}}<span ng-if="!$last">, </span>
             </b>
         </form>
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <button ng-click="showHelp">Help?</button><b ng-if="showHelp">Enter a word into the search box above or select a word after clicking on 'Available Words'.</b>
+        <button ng-click="showHelp = !showHelp">Help?</button><b ng-if="showHelp">Enter a word into the search box above or select a word after clicking on 'Available Words'.</b>
     </ion-content>
 </ion-view></script>
   </body>
