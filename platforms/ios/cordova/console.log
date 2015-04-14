@@ -1,2 +1,24 @@
-2015-04-06 21:47:55.767 rogo[89881:4475509] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/i/Library/Developer/CoreSimulator/Devices/B30FCEF7-56DE-4BE6-8A76-E638E54FCC99/data/Containers/Data/Application/A5042317-0134-4D57-A663-FD05FA91FA03/Library/Cookies/Cookies.binarycookies
-2015-04-13 17:48:21.276 rogo[3414:43870] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/i/Library/Developer/CoreSimulator/Devices/B30FCEF7-56DE-4BE6-8A76-E638E54FCC99/data/Containers/Data/Application/3B3863F8-936F-4979-BA60-96CAA57F16C8/Library/Cookies/Cookies.binarycookies
+2015-04-13 22:15:46.901 app[8292:112894] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/i/Library/Developer/CoreSimulator/Devices/B30FCEF7-56DE-4BE6-8A76-E638E54FCC99/data/Containers/Data/Application/F4999600-665A-4C5C-95D6-B3E3B80A058A/Library/Cookies/Cookies.binarycookies
+2015-04-13 22:15:47.428 app[8292:112894] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-13 22:15:47.429 app[8292:112894] Multi-tasking -> Device: YES, App: YES
+2015-04-13 22:15:47.457 app[8292:112894] Unlimited access to network resources
+2015-04-13 22:15:48.003 app[8292:112894] [CDVTimer][keyboard] 0.114977ms
+2015-04-13 22:15:48.005 app[8292:112894] [CDVTimer][admob] 1.670957ms
+2015-04-13 22:15:48.005 app[8292:112894] [CDVTimer][TotalPluginStartup] 2.259970ms
+2015-04-13 22:15:48.672 app[8292:112894] Resetting plugins due to page load.
+2015-04-13 22:15:49.359 app[8292:112894] Finished load of: file:///Users/i/Library/Developer/CoreSimulator/Devices/B30FCEF7-56DE-4BE6-8A76-E638E54FCC99/data/Containers/Bundle/Application/6737F930-7AAB-47A6-B06C-115CD1CAE3C5/app.app/www/index.html#/
+2015-04-13 22:16:16.249 app[8292:113034] Communications error: <OS_xpc_error: <error: 0x3abb5f4> { count = 1, contents =
+	"XPCErrorDescription" => <string: 0x3abb83c> { length = 22, contents = "Connection interrupted" }
+}>
+2015-04-13 22:28:03.419 app[8802:119598] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/i/Library/Developer/CoreSimulator/Devices/B30FCEF7-56DE-4BE6-8A76-E638E54FCC99/data/Containers/Data/Application/A3F8F158-0475-4F32-9F58-37CAAA79AE3D/Library/Cookies/Cookies.binarycookies
+2015-04-13 22:28:03.934 app[8802:119598] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-13 22:28:03.934 app[8802:119598] Multi-tasking -> Device: YES, App: YES
+2015-04-13 22:28:03.968 app[8802:119598] Unlimited access to network resources
+2015-04-13 22:28:04.537 app[8802:119598] [CDVTimer][keyboard] 0.594974ms
+2015-04-13 22:28:04.539 app[8802:119598] [CDVTimer][admob] 1.911044ms
+2015-04-13 22:28:04.539 app[8802:119598] [CDVTimer][TotalPluginStartup] 3.149033ms
+2015-04-13 22:28:04.842 app[8802:119598] Resetting plugins due to page load.
+2015-04-13 22:28:05.733 app[8802:119598] Finished load of: file:///Users/i/Library/Developer/CoreSimulator/Devices/B30FCEF7-56DE-4BE6-8A76-E638E54FCC99/data/Containers/Bundle/Application/8E747B6B-94AB-448B-8DA4-2B516C9335CE/app.app/www/index.html#/
+2015-04-13 22:30:51.921 app[8802:120889] Communications error: <OS_xpc_error: <error: 0x3b605f4> { count = 1, contents =
+	"XPCErrorDescription" => <string: 0x3b6083c> { length = 22, contents = "Connection interrupted" }
+}>

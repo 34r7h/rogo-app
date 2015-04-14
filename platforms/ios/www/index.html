@@ -20,6 +20,7 @@
       <script src="lib/firebase/firebase.js"></script>
       <script src="lib/angularfire/dist/angularfire.js"></script>
       <script src="lib/angular-touch/angular-touch.js"></script>
+      <script src="lib/angular-admob/angular-admob.js"></script>
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -45,6 +46,10 @@
                 <i class="icon ion-search placeholder-icon"></i>
                 <input ng-model="search" placeholder="Search">
             </label>
+            <button ng-click="showAvailableWords = !showAvailableWords">Available Words?</button>
+            <b ng-if="showAvailableWords" ng-click="$parent.search = wordGroup.name;" ng-repeat="wordGroup in wordListArray | limitTo:30 | orderBy: 'name'">
+                {{wordGroup.name}}<span ng-if="!$last">, </span>
+            </b>
         </form>
         <div class="list card">
             <div ng-if="search.length > 0" ng-repeat="wordGroup in wordListArray | filter:search">
@@ -55,8 +60,7 @@
                 </div>
             </div>
         </div>
-        <button ng-click="showAvailableWords = !showAvailableWords">Available Words? </button><b ng-if="showAvailableWords" ng-click="search = wordGroup.name; $parent.adminSearch = wordGroup.name" ng-repeat="wordGroup in wordListArray">{{wordGroup.name}}<span ng-if="!$last">, </span></b>
-        <button ng-click="showHelp">Help?</button><b ng-if="showHelp">Enter a word into the search box above or select a word after clicking on 'Available Words'.</b>
+        <button ng-click="showHelp = !showHelp">Help?</button><b ng-if="showHelp">Enter a word into the search box above or select a word after clicking on 'Available Words'.</b>
     </ion-content>
 </ion-view></script>
   </body>
