@@ -46,7 +46,7 @@
                 <input ng-model="search" placeholder="Search">
             </label>
             <button ng-click="showAvailableWords = !showAvailableWords">Available Words?</button>
-            <b ng-if="showAvailableWords" ng-click="$parent.search = wordGroup.name;" ng-repeat="wordGroup in wordListArray">
+            <b ng-if="showAvailableWords" ng-click="$parent.$parent.search = wordGroup.name;" ng-repeat="wordGroup in wordListArray">
                 {{wordGroup.name}}<span ng-if="!$last">, </span>
             </b>
         </form>
