@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Ro Go Gadget</title>
+
+    <style>
+      .angular-google-map-container {
+          width: 100%;
+          height: 504px;
+      }
+    </style>
+
+    <!--<link href="/css/preview-frame.css" rel="stylesheet">-->
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+      <script src="lib/firebase/firebase.js"></script>
+      <script src="lib/angularfire/dist/angularfire.js"></script>
+      <script src="lib/angular-touch/angular-touch.js"></script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+      <script src="js/controllers.js"></script>
+      <script src="js/services.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7" ng-controller="adolfCtrl" class="platform-ios platform-cordova platform-webview">
+  <div>
+    <div>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button class="button-icon icon ion-ios7-arrow-back">Back</ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view></ion-nav-view>
+    </div>
+</div>
+<script id="page10.html" type="text/ng-template">
+<ion-view title="ROGO">
+    <ion-content padding="true" class="has-header">
+        <span>{{text.$value}}Available Words: </span><b ng-click="$parent.search = wordGroup.name; $parent.adminSearch = wordGroup.name" ng-repeat="wordGroup in wordListArray">{{wordGroup.name}}<span ng-if="!$last">, </span></b>
+        <div class="list card">
+            <div ng-if="search.length > 0" ng-repeat="wordGroup in wordListArray | filter:search">
+                <b href ng-click="showMeanings=!showMeanings"><h2>{{wordGroup.name}}</h2></b>
+                <div ng-repeat="meaning in $parent.wordGroup.meanings">
+                    <h3><a href ng-click="showText=!showText"><b><span ng-repeat="(key,meaning) in meaning">{{key}}: {{meaning}}</span></b></a></h3>
+                    <div ng-if="showText">{{text.$value}}hello</div>
+                </div>
+            </div>
+            <div class="item item-divider">Word Meanings</div>
+            <div class="item item-body">
+
+                <form>
+                    <ion-toggle toggle-class="toggle-positive" ng-click="showText=!showText">A computer invented in the early 1980's</ion-toggle>
+                    <ion-toggle toggle-class="toggle-positive" ng-click="showText=!showText">A fruit that comes in many different varieties</ion-toggle>
+                </form>
+                <div>
+                    <p>
+                        <strong>Toggle</strong>the meanings for full view</p>
+                </div>
+            </div>
+        </div>
+        <ion-list></ion-list>
+        <form>
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input ng-model="search" placeholder="Search">
+            </label>
+            <div>
+                <a>Help?</a>
+            </div>
+        </form>
+    </ion-content>
+</ion-view></script>
+<script id="page13.html" type="text/ng-template">
+<ion-view title="Help?">
+    <ion-content padding="true" class="has-header">
+        <h3>How to use this app</h3>
+        <div>
+            <p>
+                <strong>Search for a word</strong>
+            </p>
+
+            <p>If the word is in out system, multiple meanings will display. Touch the one you want to read more of.</p>
+        </div>
+    </ion-content>
+</ion-view></script>
+<script id="modal1.html" type="text/ng-template">
+<div class="modal">
+    <ion-header-bar class="bar-stable">
+        <a href="#/" class="button button-stable button-clear">Back</a>
+        <h class="title">Apple</h>
+        <div class="buttons"></div>
+    </ion-header-bar>
+    <ion-content padding="true" scroll="false" class="has-header">
+        <h1>A fruit</h1>
+        <div>
+            <p>Some friendly
+                <strong>markdown</strong>Some friendly
+                <strong>markdown</strong>Some friendly
+                <strong>markdown</strong>Some friendly
+                <strong>markdown</strong>Some friendly
+                <strong>markdown</strong>Some friendly
+                <strong>markdown</strong>Some friendly
+                <strong>markdown</strong>
+            </p>
+        </div>
+        <ion-list></ion-list>
+        <div class="list card">
+            <div class="item item-divider">Card</div>
+            <div class="item item-body">
+                <div style="line-height: 250px; border: 1px solid rgb(238, 238, 238); border-radius: 3px; text-align: center; background-color: rgb(255, 255, 255);">
+                    <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</div></script>
+  </body>
+</html>
