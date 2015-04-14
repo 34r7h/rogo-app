@@ -45,65 +45,19 @@
                 <i class="icon ion-search placeholder-icon"></i>
                 <input ng-model="search" placeholder="Search">
             </label>
-            <div>
-                <a>Help?</a>
-            </div>
         </form>
-        <span ng-click="showAvailableWords = !showAvailableWords">Available Words? </span><b ng-if="showAvailableWords" ng-click="$parent.search = wordGroup.name; $parent.adminSearch = wordGroup.name" ng-repeat="wordGroup in wordListArray">{{wordGroup.name}}<span ng-if="!$last">, </span></b>
         <div class="list card">
             <div ng-if="search.length > 0" ng-repeat="wordGroup in wordListArray | filter:search">
                 <b href ng-click="showMeanings=!showMeanings"><h2>{{wordGroup.name}}</h2></b>
                 <div ng-repeat="meaning in $parent.wordGroup.meanings">
                     <h3><a href ng-click="showText=!showText"><b><span ng-repeat="(key,meaning) in meaning">{{key}}: {{meaning}}</span></b></a></h3>
-                    <div ng-if="showText">{{text.$value}}hello</div>
+                    <div ng-if="showText">{{text.$value}}</div>
                 </div>
             </div>
         </div>
+        <button ng-click="showAvailableWords = !showAvailableWords">Available Words? </button><b ng-if="showAvailableWords" ng-click="search = wordGroup.name; $parent.adminSearch = wordGroup.name" ng-repeat="wordGroup in wordListArray">{{wordGroup.name}}<span ng-if="!$last">, </span></b>
+        <button ng-click="showHelp">Help?</button><b ng-if="showHelp">Enter a word into the search box above or select a word after clicking on 'Available Words'.</b>
     </ion-content>
 </ion-view></script>
-<script id="page13.html" type="text/ng-template">
-<ion-view title="Help?">
-    <ion-content padding="true" class="has-header">
-        <h3>How to use this app</h3>
-        <div>
-            <p>
-                <strong>Search for a word</strong>
-            </p>
-
-            <p>If the word is in out system, multiple meanings will display. Touch the one you want to read more of.</p>
-        </div>
-    </ion-content>
-</ion-view></script>
-<script id="modal1.html" type="text/ng-template">
-<div class="modal">
-    <ion-header-bar class="bar-stable">
-        <a href="#/" class="button button-stable button-clear">Back</a>
-        <h class="title">Apple</h>
-        <div class="buttons"></div>
-    </ion-header-bar>
-    <ion-content padding="true" scroll="false" class="has-header">
-        <h1>A fruit</h1>
-        <div>
-            <p>Some friendly
-                <strong>markdown</strong>Some friendly
-                <strong>markdown</strong>Some friendly
-                <strong>markdown</strong>Some friendly
-                <strong>markdown</strong>Some friendly
-                <strong>markdown</strong>Some friendly
-                <strong>markdown</strong>Some friendly
-                <strong>markdown</strong>
-            </p>
-        </div>
-        <ion-list></ion-list>
-        <div class="list card">
-            <div class="item item-divider">Card</div>
-            <div class="item item-body">
-                <div style="line-height: 250px; border: 1px solid rgb(238, 238, 238); border-radius: 3px; text-align: center; background-color: rgb(255, 255, 255);">
-                    <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
-                </div>
-            </div>
-        </div>
-    </ion-content>
-</div></script>
   </body>
 </html>
