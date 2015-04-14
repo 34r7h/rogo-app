@@ -33,16 +33,6 @@ angular.module('app', ['ionic', 'adolfServices', 'adolfControllers', 'firebase',
 				url: '/',
 				templateUrl: 'page10.html'
 			})
-
-			.state('page13', {
-				url: '/page13',
-				templateUrl: 'page13.html'
-			})
-
-			.state('modal1', {
-				url: '/modal',
-				templateUrl: '{{text.$value}}'
-			})
 		;
 
 		// if none of the above states are matched, use this as the fallback
