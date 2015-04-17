@@ -43,7 +43,7 @@
         <form>
             <label class="item item-input">
                 <i class="icon ion-search placeholder-icon"></i>
-                <h2><input ng-model="search" placeholder="Search"></h2>
+                <input style="width: 100%; min-height:40px;" ng-model="search" placeholder="Search">
             </label>
             <button ng-click="showAvailableWords = !showAvailableWords">Available Words?</button>
             <b ng-if="showAvailableWords" ng-click="$parent.search = wordGroup.name;" ng-repeat="wordGroup in wordListArray | limitTo:30 | orderBy: 'name'">
