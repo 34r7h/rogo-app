@@ -43,7 +43,7 @@
         <form>
             <label class="item item-input">
                 <i class="icon ion-search placeholder-icon"></i>
-                <input ng-model="search" placeholder="Search">
+                <h2><input ng-model="search" placeholder="Search"></h2>
             </label>
             <button ng-click="showAvailableWords = !showAvailableWords">Available Words?</button>
             <b ng-if="showAvailableWords" ng-click="$parent.search = wordGroup.name;" ng-repeat="wordGroup in wordListArray | limitTo:30 | orderBy: 'name'">
@@ -54,7 +54,7 @@
             <div ng-if="search.length > 0" ng-repeat="wordGroup in wordListArray | filter:search">
                 <b href ng-click="showMeanings=!showMeanings"><h2>{{wordGroup.name}}</h2></b>
                 <div ng-repeat="meaning in $parent.wordGroup.meanings">
-                    <h3><a href ng-click="showText=!showText"><b><span ng-repeat="(key,meaning) in meaning">{{key}}: {{meaning}}</span></b></a></h3>
+                    <h3><a href ng-click="showText=!showText"><b><span ng-repeat="(key,meaning) in meaning">wz<b>{{key}}</b>>: {{meaning}}</span></b></a></h3>
                     <div ng-if="showText">{{text.$value}}</div>
                 </div>
             </div>
