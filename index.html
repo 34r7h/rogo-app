@@ -54,7 +54,7 @@
             <div ng-if="search.length > 0" ng-repeat="wordGroup in wordListArray | filter:search">
                 <b href ng-click="showMeanings=!showMeanings"><h2>{{wordGroup.name}}</h2></b>
                 <div ng-repeat="meaning in $parent.wordGroup.meanings">
-                    <h3><a href ng-click="showText=!showText"><b><span ng-repeat="(key,meaning) in meaning">wz<b>{{key}}</b>>: {{meaning}}</span></b></a></h3>
+                    <h3><a href ng-click="showText=!showText"><b><span ng-repeat="(key,meaning) in meaning">wz<b>{{$index}}</b>>: {{meaning}}</span></b></a></h3>
                     <div ng-if="showText">{{text.$value}}</div>
                 </div>
             </div>
