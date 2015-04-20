@@ -20,7 +20,6 @@
       <script src="lib/firebase/firebase.js"></script>
       <script src="lib/angularfire/dist/angularfire.js"></script>
       <script src="lib/angular-touch/angular-touch.js"></script>
-      <script src="lib/angular-admob/angular-admob.js"></script>
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -44,8 +43,9 @@
         <form>
             <label class="item item-input">
                 <i class="icon ion-search placeholder-icon"></i>
-                <input ng-model="search" placeholder="Search">
+                <input style="width: 100%; min-height:40px;" ng-model="search" placeholder="Search">
             </label>
+            <hr/>
             <button ng-click="showAvailableWords = !showAvailableWords">Available Words?</button>
             <b ng-if="showAvailableWords" ng-click="$parent.search = wordGroup.name;" ng-repeat="wordGroup in wordListArray | limitTo:30 | orderBy: 'name'">
                 {{wordGroup.name}}<span ng-if="!$last">, </span>
@@ -55,7 +55,7 @@
             <div ng-if="search.length > 0" ng-repeat="wordGroup in wordListArray | filter:search">
                 <b href ng-click="showMeanings=!showMeanings"><h2>{{wordGroup.name}}</h2></b>
                 <div ng-repeat="meaning in $parent.wordGroup.meanings">
-                    <h3><a href ng-click="showText=!showText"><b><span ng-repeat="(key,meaning) in meaning">{{key}}: {{meaning}}</span></b></a></h3>
+                    <h3><a href ng-click="showText=!showText"><b><span ng-repeat="(key,meaning) in meaning">wz<b>{{$index}}</b>>: {{meaning}}</span></b></a></h3>
                     <div ng-if="showText">{{text.$value}}</div>
                 </div>
             </div>

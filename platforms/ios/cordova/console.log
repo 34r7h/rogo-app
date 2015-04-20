@@ -22,3 +22,24 @@
 2015-04-13 22:30:51.921 app[8802:120889] Communications error: <OS_xpc_error: <error: 0x3b605f4> { count = 1, contents =
 	"XPCErrorDescription" => <string: 0x3b6083c> { length = 22, contents = "Connection interrupted" }
 }>
+2015-04-17 00:16:05.559 app[16715:783237] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/i/Library/Developer/CoreSimulator/Devices/B30FCEF7-56DE-4BE6-8A76-E638E54FCC99/data/Containers/Data/Application/DA78FAF0-AE8C-4D20-8A84-B80630BC799D/Library/Cookies/Cookies.binarycookies
+2015-04-17 00:16:06.625 app[16715:783237] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-17 00:16:06.629 app[16715:783237] Multi-tasking -> Device: YES, App: YES
+2015-04-17 00:16:06.681 app[16715:783237] Unlimited access to network resources
+2015-04-17 00:16:07.347 app[16715:783237] [CDVTimer][keyboard] 0.186980ms
+2015-04-17 00:16:07.349 app[16715:783237] [CDVTimer][admob] 1.460969ms
+2015-04-17 00:16:07.349 app[16715:783237] [CDVTimer][TotalPluginStartup] 4.258037ms
+2015-04-17 00:16:07.655 app[16715:783237] Resetting plugins due to page load.
+2015-04-17 00:16:08.618 app[16715:783237] Finished load of: file:///Users/i/Library/Developer/CoreSimulator/Devices/B30FCEF7-56DE-4BE6-8A76-E638E54FCC99/data/Containers/Bundle/Application/3146C64E-E9CB-491A-99C1-AAC27709FF02/app.app/www/index.html#/
+2015-04-17 00:18:26.598 app[16972:785159] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/i/Library/Developer/CoreSimulator/Devices/B30FCEF7-56DE-4BE6-8A76-E638E54FCC99/data/Containers/Data/Application/D7D82B14-1557-446F-B9A8-A31A299F8515/Library/Cookies/Cookies.binarycookies
+2015-04-17 00:18:27.089 app[16972:785159] Apache Cordova native platform version 3.7.0 is starting.
+2015-04-17 00:18:27.089 app[16972:785159] Multi-tasking -> Device: YES, App: YES
+2015-04-17 00:18:27.114 app[16972:785159] Unlimited access to network resources
+2015-04-17 00:18:27.717 app[16972:785159] [CDVTimer][keyboard] 0.101984ms
+2015-04-17 00:18:27.720 app[16972:785159] [CDVTimer][admob] 2.301991ms
+2015-04-17 00:18:27.720 app[16972:785159] [CDVTimer][TotalPluginStartup] 4.617035ms
+2015-04-17 00:18:27.983 app[16972:785159] Resetting plugins due to page load.
+2015-04-17 00:18:28.759 app[16972:785159] Finished load of: file:///Users/i/Library/Developer/CoreSimulator/Devices/B30FCEF7-56DE-4BE6-8A76-E638E54FCC99/data/Containers/Bundle/Application/3585A23D-574D-4B3F-A810-03268D632E56/app.app/www/index.html#/
+2015-04-17 01:46:38.573 app[16972:853708] Communications error: <OS_xpc_error: <error: 0x3b5a5f4> { count = 1, contents =
+	"XPCErrorDescription" => <string: 0x3b5a83c> { length = 22, contents = "Connection interrupted" }
+}>

@@ -32,7 +32,6 @@
   <div>
     <div>
         <ion-nav-bar class="bar-stable">
-            <ion-nav-back-button class="button-icon icon ion-ios7-arrow-back">Back</ion-nav-back-button>
         </ion-nav-bar>
         <ion-nav-view></ion-nav-view>
     </div>
@@ -45,16 +44,17 @@
                 <i class="icon ion-search placeholder-icon"></i>
                 <input style="width: 100%; min-height:40px;" ng-model="search" placeholder="Search">
             </label>
+            <hr/>
             <button ng-click="showAvailableWords = !showAvailableWords">Available Words?</button>
-            <b ng-if="showAvailableWords" ng-click="$parent.search = wordGroup.name;" ng-repeat="wordGroup in wordListArray | limitTo:30 | orderBy: 'name'">
-                {{wordGroup.name}}<span ng-if="!$last">, </span>
+            <b ng-if="showAvailableWords" ng-click="$parent.$parent.search = wordGroup.name;" ng-repeat="wordGroup in wordListArray | limitTo:30 | orderBy: 'name'">
+                <a href>{{wordGroup.name}}</a><span ng-if="!$last">, </span>
             </b>
         </form>
         <div class="list card">
             <div ng-if="search.length > 0" ng-repeat="wordGroup in wordListArray | filter:search">
                 <b href ng-click="showMeanings=!showMeanings"><h2>{{wordGroup.name}}</h2></b>
                 <div ng-repeat="meaning in $parent.wordGroup.meanings">
-                    <h3><a href ng-click="showText=!showText"><b><span ng-repeat="(key,meaning) in meaning">wz<b>{{$index}}</b>>: {{meaning}}</span></b></a></h3>
+                    <h3><a href ng-click="showText=!showText"><b>wz<b>{{$index}}</b>: {{meaning}}</b></a></h3>
                     <div ng-if="showText">{{text.$value}}</div>
                 </div>
             </div>

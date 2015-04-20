@@ -5,10 +5,9 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'adolfServices', 'adolfControllers', 'firebase', 'ngTouch', 'admobModule'])
+angular.module('app', ['ionic', 'adolfServices', 'adolfControllers', 'firebase', 'ngTouch'])
 
-	.run(function($ionicPlatform, admobSvc) {
-		admobSvc.createBannerView();
+	.run(function($ionicPlatform) {
 		$ionicPlatform.ready(function() {
 			// Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
 			// for form inputs)
@@ -19,11 +18,10 @@ angular.module('app', ['ionic', 'adolfServices', 'adolfControllers', 'firebase',
 				// org.apache.cordova.statusbar required
 				StatusBar.styleDefault();
 			}
-
 		});
 	})
 
-	.config(function($stateProvider, $urlRouterProvider, admobSvcProvider) {
+	.config(function($stateProvider, $urlRouterProvider) {
 
 		// Ionic uses AngularUI Router which uses the concept of states
 		// Learn more here: https://github.com/angular-ui/ui-router
@@ -41,12 +39,5 @@ angular.module('app', ['ionic', 'adolfServices', 'adolfControllers', 'firebase',
 
 		$urlRouterProvider.otherwise('/');
 
-		admobSvcProvider.setOptions({
-			publisherId:          "ca-app-pub-8440343014846849/3119840614",  // Required
-			interstitialAdId:     "ca-app-pub-8440343014846849/4596573817",  // Optional
-			tappxIdiOs:           "/120940746/Pub-2702-iOS-8226",            // Optional
-			tappxIdAndroid:       "/120940746/Pub-2700-Android-8171",        // Optional
-			tappxShare:           0.5                                        // Optional
-		});
 
 	});
