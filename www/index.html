@@ -46,7 +46,7 @@
             </label>
             <hr/>
             <button ng-click="showAvailableWords = !showAvailableWords">Available Words?</button>
-            <b ng-if="showAvailableWords" ng-click="$parent.$parent.search = wordGroup.name;" ng-repeat="wordGroup in wordListArray track by $index| limitTo:30 | orderBy: 'name'">
+            <b ng-if="showAvailableWords" ng-click="$parent.$parent.search = wordGroup.name;" ng-repeat="wordGroup in wordListArray | limitTo:30 | orderBy: 'name'">
                 <a href>{{wordGroup.name}}</a><span ng-if="!$last">, </span>
             </b>
         </form>
