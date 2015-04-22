@@ -53,7 +53,7 @@
         <div class="list card">
             <div ng-if="search.length > 0" ng-repeat="wordGroup in wordListArray | filter:search">
                 <b href ng-click="showMeanings=!showMeanings"><h2>{{wordGroup.name}}</h2></b>
-                <div ng-repeat="meaning in $parent.wordGroup.meanings">
+                <div ng-repeat="meaning in $parent.wordGroup.meanings track by $index">
                     <h3><a href ng-click="showText=!showText"><b>wz<b>{{$index}}</b>: {{meaning}}</b></a></h3>
                     <div ng-if="showText">{{text.$value}}</div>
                 </div>
