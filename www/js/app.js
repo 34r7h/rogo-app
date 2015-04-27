@@ -33,6 +33,10 @@ angular.module('app', ['ionic', 'adolfServices', 'adolfControllers', 'firebase',
 				url: '/',
 				templateUrl: 'page10.html'
 			})
+			.state('documentation', {
+				url: '/docs',
+				template: '<a>Back</a><p>{{docs.text}}</p>'
+			})
 		;
 
 		// if none of the above states are matched, use this as the fallback
