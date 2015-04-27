@@ -34,8 +34,8 @@ angular.module('app', ['ionic', 'adolfServices', 'adolfControllers', 'firebase',
 				templateUrl: 'page10.html'
 			})
 			.state('documentation', {
-				url: 'documentation',
-				template: 'hello'
+				url: '/docs',
+				template: '<a>Back</a><p>{{docs.text}}</p>'
 			})
 		;
 

@@ -26,7 +26,7 @@ angular.module('adolfServices', ['firebase'])
 			arr.$remove(id);
 		};
 		service.api.update = function(obj, val){
-			console.log(val,obj)
+			console.log(val,obj);
 			obj.$save();
 		};
 

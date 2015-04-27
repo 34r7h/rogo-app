@@ -6,14 +6,15 @@
     <title>Rogo App</title>
 
     <style>
-      .angular-google-map-container {
-          width: 100%;
-          height: 504px;
-      }
+        .angular-google-map-container {
+            width: 100%;
+            height: 504px;
+        }
     </style>
 
     <!--<link href="/css/preview-frame.css" rel="stylesheet">-->
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -39,7 +40,7 @@
 <script id="page10.html" type="text/ng-template">
 <ion-view title="ROGO">
     <ion-content padding="true" class="has-header">
-        <form>
+        <div ng-show="!showHelp"><form>
             <label class="item item-input">
                 <i class="icon ion-search placeholder-icon"></i>
                 <input style="width: 100%; min-height:40px;" ng-model="search.name" placeholder="Search">
@@ -58,8 +59,10 @@
                     <div ng-if="showText">{{text.$value}}</div>
                 </div>
             </div>
-        </div>
-        <button ng-click="showHelp = !showHelp">Documentation?</button><b ng-if="showHelp">{{docs.text}}</b>
+        </div></div>
+        <button ng-show="!showHelp" ng-click="showHelp = !showHelp">Documentation?</button>
+        <button ng-show="showHelp" ng-click="showHelp = !showHelp">Go Back</button>
+        <b ng-if="showHelp">{{docs.text}}</b>
     </ion-content>
 </ion-view></script>
   </body>
