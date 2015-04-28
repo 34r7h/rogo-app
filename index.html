@@ -40,8 +40,9 @@
 <script id="page10.html" type="text/ng-template">
 <ion-view title="ROGO">
     <ion-content padding="true" class="has-header">
-        <p>{{docs.text}}</p>
-        <div ng-show="!showHelp"><form>
+        <div ng-show="!showHelp">
+            <p>{{docs.text}}</p>
+            <form>
             <label class="item item-input">
                 <i class="icon ion-search placeholder-icon"></i>
                 <input style="width: 100%; min-height:40px;" ng-model="search.name" placeholder="Search">
