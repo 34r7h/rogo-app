@@ -40,6 +40,7 @@
 <script id="page10.html" type="text/ng-template">
 <ion-view title="ROGO">
     <ion-content padding="true" class="has-header">
+        <p>{{docs.text}}</p>
         <div ng-show="!showHelp"><form>
             <label class="item item-input">
                 <i class="icon ion-search placeholder-icon"></i>
@@ -55,14 +56,14 @@
             <div ng-if="search.name.length > 0" ng-repeat="wordGroup in wordListArray | filter:search">
                 <b href ng-click="showMeanings=!showMeanings"><h2>{{wordGroup.name}}</h2></b>
                 <div ng-repeat="meaning in $parent.wordGroup.meanings track by $index">
-                    <h3><a href ng-click="showText=!showText"><b>wz<b>{{$index}}</b>: {{meaning}}</b></a></h3>
+                    <h3><span>wz{{$index}}</span>:<b> {{meaning}}</b></span></h3>
                     <div ng-if="showText">{{text.$value}}</div>
                 </div>
             </div>
         </div></div>
         <button ng-show="!showHelp" ng-click="showHelp = !showHelp">Documentation?</button>
         <button ng-show="showHelp" ng-click="showHelp = !showHelp">Go Back</button>
-        <b ng-if="showHelp">{{docs.text}}</b>
+        <b ng-if="showHelp">{{text.$value}}</b>
     </ion-content>
 </ion-view></script>
   </body>
