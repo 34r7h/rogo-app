@@ -13,10 +13,6 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
                             "count": 1
                         },
@@ -30,6 +26,10 @@
                         },
                         {
                             "xml": "<feature name=\"AdMobAds\"><param name=\"ios-package\" value=\"CDVAdMobAds\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"IonicDeploy\"><param name=\"ios-package\" onload=\"true\" value=\"IonicDeploy\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -123,9 +123,6 @@
         "com.ionic.keyboard": {
             "PACKAGE_NAME": "com.ionicframework.app315125"
         },
-        "org.apache.cordova.console": {
-            "PACKAGE_NAME": "com.ionicframework.app315125"
-        },
         "org.apache.cordova.device": {
             "PACKAGE_NAME": "com.ionicframework.app315125"
         },
@@ -133,6 +130,9 @@
             "PACKAGE_NAME": "com.ionicframework.app315125"
         },
         "com.admob.google": {
+            "PACKAGE_NAME": "com.ionicframework.app315125"
+        },
+        "com.ionic.deploy": {
             "PACKAGE_NAME": "com.ionicframework.app315125"
         }
     },

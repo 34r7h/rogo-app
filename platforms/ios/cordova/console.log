@@ -124,3 +124,21 @@
 2015-04-27 13:05:52.452 app[4845:68839] [CDVTimer][TotalPluginStartup] 2.193987ms
 2015-04-27 13:05:52.668 app[4845:68839] Resetting plugins due to page load.
 2015-04-27 13:05:53.337 app[4845:68839] Finished load of: file:///Users/i/Library/Developer/CoreSimulator/Devices/940F392B-A850-4516-A7E2-0F33A53EC8AB/data/Containers/Bundle/Application/7BDAB55B-E5C1-4CF1-8756-26D108CA657D/app.app/www/index.html#/
+2015-05-06 16:53:06.825 app[1003:16633] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/i/Library/Developer/CoreSimulator/Devices/940F392B-A850-4516-A7E2-0F33A53EC8AB/data/Containers/Data/Application/AE3E73C3-1B18-43E2-8883-A7A85BC22059/Library/Cookies/Cookies.binarycookies
+2015-05-06 16:53:07.306 app[1003:16633] Apache Cordova native platform version 3.7.0 is starting.
+2015-05-06 16:53:07.307 app[1003:16633] Multi-tasking -> Device: YES, App: YES
+2015-05-06 16:53:07.330 app[1003:16633] Unlimited access to network resources
+2015-05-06 16:53:07.905 app[1003:16633] [CDVTimer][keyboard] 1.057029ms
+2015-05-06 16:53:07.906 app[1003:16633] [CDVTimer][admob] 0.209033ms
+2015-05-06 16:53:07.906 app[1003:16633] [CDVTimer][TotalPluginStartup] 2.461016ms
+2015-05-06 16:53:08.163 app[1003:16633] Resetting plugins due to page load.
+2015-05-06 16:53:08.936 app[1003:16633] Finished load of: file:///Users/i/Library/Developer/CoreSimulator/Devices/940F392B-A850-4516-A7E2-0F33A53EC8AB/data/Containers/Bundle/Application/49B45C2C-3113-417E-82AB-8AB6C27725AC/app.app/www/index.html#/
+2015-05-06 17:05:56.596 app[1765:24238] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/i/Library/Developer/CoreSimulator/Devices/940F392B-A850-4516-A7E2-0F33A53EC8AB/data/Containers/Data/Application/A55E19B2-ED3D-4541-9579-17D612E0DAB9/Library/Cookies/Cookies.binarycookies
+2015-05-06 17:05:56.761 app[1765:24238] Apache Cordova native platform version 3.7.0 is starting.
+2015-05-06 17:05:56.762 app[1765:24238] Multi-tasking -> Device: YES, App: YES
+2015-05-06 17:05:56.764 app[1765:24238] Unlimited access to network resources
+2015-05-06 17:05:56.898 app[1765:24238] [CDVTimer][keyboard] 0.089049ms
+2015-05-06 17:05:56.899 app[1765:24238] [CDVTimer][admob] 1.076043ms
+2015-05-06 17:05:56.900 app[1765:24238] [CDVTimer][TotalPluginStartup] 2.683043ms
+2015-05-06 17:05:57.017 app[1765:24238] Resetting plugins due to page load.
+2015-05-06 17:05:57.617 app[1765:24238] Finished load of: file:///Users/i/Library/Developer/CoreSimulator/Devices/940F392B-A850-4516-A7E2-0F33A53EC8AB/data/Containers/Bundle/Application/A228543E-FAC7-4866-B57B-E9DE57DF7854/app.app/www/index.html#/

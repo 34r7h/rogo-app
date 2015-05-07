@@ -8,20 +8,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.console/www/console-via-logger.js",
-        "id": "org.apache.cordova.console.console",
-        "clobbers": [
-            "console"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.console/www/logger.js",
-        "id": "org.apache.cordova.console.logger",
-        "clobbers": [
-            "cordova.logger"
-        ]
-    },
-    {
         "file": "plugins/org.apache.cordova.device/www/device.js",
         "id": "org.apache.cordova.device.device",
         "clobbers": [
@@ -44,6 +30,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/com.ionic.deploy/www/ionicdeploy.js",
+        "id": "com.ionic.deploy.IonicDeploy",
+        "clobbers": [
+            "IonicDeploy"
+        ]
+    },
+    {
         "file": "plugins/com.connectivity.monitor/www/connectivity.js",
         "id": "com.connectivity.monitor.connectivity",
         "clobbers": [
@@ -55,10 +48,10 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "com.ionic.keyboard": "1.0.4",
-    "org.apache.cordova.console": "0.2.13",
     "org.apache.cordova.device": "0.3.0",
     "com.google.cordova.admob": "2.7.4",
     "com.admob.google": "2.0.13",
+    "com.ionic.deploy": "0.1.0",
     "com.rjfun.cordova.extension": "1.0.6",
     "com.connectivity.monitor": "1.1.0",
     "com.ios.libgoogleadmobads": "1.1.1"
