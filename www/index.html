@@ -64,7 +64,7 @@
         </div></div>
         <button ng-show="!showHelp" ng-click="showHelp = !showHelp">Documentation?</button>
         <button ng-show="showHelp" ng-click="showHelp = !showHelp">Go Back</button>
-        <b ng-if="showHelp">{{text.$value}}</b>
+        <p ng-if="showHelp" ng-bind-html="text.$value"></p>
     </ion-content>
 </ion-view></script>
   </body>
